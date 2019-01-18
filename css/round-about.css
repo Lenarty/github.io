@@ -1,0 +1,32 @@
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+#done_button{
+  position: absolute;
+  right: 50%;
+  margin-top:20px;
+  
+}
+.btn span.fas {    			
+	opacity: 0;				
+}
+.btn.active span.fas {				
+	opacity: 1;				
+}
+p,h3,label{
+  font-weight: bold;
+}
+.grey_border{
+  border: 3px solid #E6E6E6;
+}
+.round_size{
+  height: 220px;
+  width: 300px;
+}
