@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FoodU</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <img id="logo" src="img/logo_transparent.png" />
+        <a class="navbar-brand" href="index.html">FoodU</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Burgers
+        <small>tasty.</small>
+      </h1>
+
+      <!-- Project One -->
+      <div id="item_two" class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="img/burger_1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Chicago Burger</h3>
+          <small>Pizza Garden</small>
+          <p>With cheese, lettuce, BBQ sauce, onion.</p>
+          <button id="done_button" class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal1">Order now!</button>
+      <!-- Full Height Modal Right -->
+<div id="myModal1" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h4 class="modal-title w-100" >Chicago Burger</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Total: 9.99$</strong></p>
+        <hr>
+        <p class="bold_text"> Enter delivery address: </p>
+        <form name="theform" method="post" role="form">
+        <label class="bold_text" for="address">Address: </label><input type="text" onkeypress="check()" id="address" class="form-control" placeholder="Please enter your address *" required />
+        <label class="bold_text" for="city">City: </label>
+        <select class="form-control" id="sel1">
+            <option >Tetovo</option>
+            <option >Skopje</option>
+          </select>
+      
+        <label class="bold_text"  for="phone-number">Phone number: </label><input type="text" onkeypress="check()" id="phone" class="form-control" placeholder="Please enter your phone number *" required />
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <a href="thankyou.html"><button id="submitbutton" type="submit" class="btn btn-primary" disabled="disabled" >Order!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="img/burger_2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Garden Burger</h3>
+          <small>Pizza Garden</small>
+          <p>With pickles, onion, tomaotes, lettuce, ketchup.</p>
+          <button id="done_button" class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal2">Order now!</button>
+      <!-- Full Height Modal Right -->
+<div id="myModal2" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h4 class="modal-title w-100">Garden Burger</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Total: 7.99$</strong></p>
+        <hr>
+        <p class="bold_text">Enter delivery address: </p>
+        <form method="post" role="form">
+        <label class="bold_text" for="address">Address: </label><input type="text" onkeypress="check()" id="address1" class="form-control" placeholder="Please enter your address *" required="required" />
+        <label class="bold_text" for="city">City: </label>
+        <select class="form-control" id="sel1">
+            <option >Tetovo</option>
+            <option >Skopje</option>
+          </select>
+      
+        <label class="bold_text" for="phone-number">Phone number: </label><input type="text" onkeypress="check1()" id="phone1" class="form-control" placeholder="Please enter your phone number *" required="required" />
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="thankyou.html"><button id="submitbutton1" type="button" class="btn btn-primary" disabled >Order!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="img/burger_3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>King Burger</h3>
+          <small>Fratteli</small>
+          <p>With cheese, pickles, lettuce, ketchup, sweet potatoes.</p>
+          <button id="done_button" class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal3">Order now!</button>
+      <!-- Full Height Modal Right -->
+<div id="myModal3" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h4 class="modal-title w-100">King Burger</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Total: 7.99$</strong></p>
+        <hr>
+        <p class="bold_text">Enter delivery address: </p>
+        <form method="post" role="form">
+        <label class="bold_text" for="address">Address: </label><input onkeypress="check2()" type="text"  id="address2" class="form-control" placeholder="Please enter your address *" required="required" />
+        <label class="bold_text" for="city">City: </label>
+        <select class="form-control" id="sel1">
+            <option>Tetovo</option>
+            <option>Skopje</option>
+          </select>
+      
+        <label class="bold_text" for="phone-number">Phone number: </label><input onkeypress="check2()" type="text" id="phone2" class="form-control" placeholder="Please enter your phone number *" required="required" />
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="thankyou.html"><button id="submitbutton2" type="button" class="btn btn-primary" disabled>Order!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Four -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="img/burger_4.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>Cheese Burger</h3>
+          <small>Fratteli</small>
+          <p>With extra cheese, lettuce, tomaotes, french fries.</p>
+          <button id="done_button" class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal4">Order now!</button>
+      <!-- Full Height Modal Right -->
+<div id="myModal4" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h4 class="modal-title w-100">Cheese Burger</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Total: 9.99$</strong></p>
+        <hr>
+        <p class="bold_text">Enter delivery address: </p>
+        <form method="post" role="form">
+        <label class="bold_text" for="address">Address: </label><input onkeypress="check3()" type="text" id="address3" class="form-control" placeholder="Please enter your address *" required="required" />
+        <label class="bold_text" for="city">City: </label>
+        <select class="form-control" id="sel1">
+            <option>Tetovo</option>
+            <option>Skopje</option>
+          </select>
+      
+        <label class="bold_text" for="phone-number">Phone number: </label><input onkeypress="check3()" type="text" id="phone3" class="form-control" placeholder="Please enter your phone number *" required="required" />
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="thankyou.html"><button type="button" id="submitbutton3" class="btn btn-primary" disabled>Order!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Pagination -->
+      
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <div class="center">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.google.com/" class="fa fa-google"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://vimeo.com/" class="fa fa-vimeo"></a>
+          </div>
+          <p id="copyright" class="text-center text-white">Copyright &copy; FoodU</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+  
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    </body>
+  
+  </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FoodU</title>
+   
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+
+    <!-- Custom styles for this template -->
+    
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/round-about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+    
+    
+    <script src="scripts/scriptpizza.js"></script>
+
+  </head>
+
+  <body>
+
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <img id="logo" src="img/logo_transparent.png" />
+        <a class="navbar-brand" href="index.html">FoodU</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Introduction Row -->
+      <h1 class="my-4">Design your own pizza..   </h1>
+
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Toppings</h2>
+          
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto grey_border round_size" src="img/pepperoni.jpg" alt="">
+          <h3 class="my-3">Pepperoni</h3>
+          <button class="btn btn-primary" onclick="addPepperoni();total()">Add!</button>
+          <button class="btn btn-danger muted" onclick="removePepperoni()">Remove</button></br>
+          <span id="pepperoni"></span>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto grey_border round_size" src="img/tomatoes.jpg" alt="">
+          <h3 class="my-3">Tomatoes</h3>
+            <button class="btn btn-primary" onclick="addTomatoes();total()">Add!</button>
+            <button class="btn btn-danger muted" onclick="removeTomatoes()">Remove</button></br>
+            <span id="tomatoes"></span>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto grey_border round_size" src="img/mushrooms.jpg" alt="">
+          <h3 class="my-3">Mushrooms</h3>
+            <button class="btn btn-primary " onclick="addMushrooms();total()">Add!</button>
+            <button class="btn btn-danger muted" onclick="removeMushrooms()">Remove</button></br>
+            <span id="mushrooms"></span>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto grey_border round_size" src="img/onion.jpg" alt="">
+          <h3 class="my-3">Onion</h3>
+            <button class="btn btn-primary" onclick="addOnion();total()">Add!</button>
+            <button class="btn btn-danger muted" onclick="removeOnion()">Remove</button></br>
+            <span id="onion"></span>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto grey_border round_size" src="img/ruccola.jpg" alt="">
+          <h3 class="my-3">Ruccola</h3>
+            <button class="btn btn-primary " onclick="addRuccola();total()">Add!</button>
+            <button class="btn btn-danger muted" onclick="removeRuccola()">Remove</button></br>
+            <span id="ruccola"></span>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto grey_border round_size" src="img/olives.jpg" alt="">
+          <h3 class="my-3">Olives</h3>
+            <button class="btn btn-primary" onclick="addOlives();total()">Add!</button>
+            <button class="btn btn-danger muted" onclick="removeOlives()">Remove</button></br>
+            <span id="olives"></span>
+        </div>
+      </div>
+      
+      <button id="done_button" onclick="total()" class="btn btn-primary" type="button" data-toggle="modal" data-target="#fullHeightModalRight">Done!</button>
+      <!-- Full Height Modal Right -->
+<div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+
+
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h4 class="modal-title w-100" id="myModalLabel">Your order</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pizza Standard: </p>
+        <p>Cheese 2$</p>
+        <p>Sauce 3$</p>
+        <hr>
+        <p>Toppings: </p>
+        <p id="modal_pepperoni">No Pepperoni!</p>
+        <p id="modal_tomatoes">No tomatoes!</p>
+        <p id="modal_mushrooms">No Mushrooms!</p>
+        <p id="modal_onion">No Onion!</p>
+        <p id="modal_ruccola">No Ruccola!</p>
+        <p id="modal_olives">No Olives!</p>
+        <hr>
+        <p id="total"></p>
+        <hr>
+        <p>Enter delivery address: </p>
+        <form method="post" role="form">
+        <label for="address">Address: </label><input type="text" id="address13" onkeypress="check13()" class="form-control" placeholder="Please enter your address *" required="required" />
+        <label for="city">City: </label>
+        <select class="form-control" id="sel1">
+            <option>Tetovo</option>
+            <option>Skopje</option>
+          </select>
+      
+        <label for="phone-number">Phone number: </label><input type="text" id="phone13" onkeypress="check13()" class="form-control" placeholder="Please enter your phone number *" required="required" />
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="thankyou.html"><button type="button" id="submitbutton13" disabled class="btn btn-primary">Order!</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Full Height Modal Right -->
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="center">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.google.com/" class="fa fa-google"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://vimeo.com/" class="fa fa-vimeo"></a>
+        </div>
+        <p id="pizza_footer" class="text-center text-white">Copyright &copy; FoodU</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
